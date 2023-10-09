@@ -23,7 +23,7 @@ class CitiesGame {
         }
     }
 
-    private fun isCityValid(city: String, lastCity: String): Boolean {
+    fun isCityValid(city: String, lastCity: String): Boolean {
         if (city.isEmpty()) return false
         if (!cities.contains(city)) return false
         if (lastCity.isNotEmpty() && city[0].toUpperCase() != lastCity[lastCity.lastIndex].toUpperCase()) return false
