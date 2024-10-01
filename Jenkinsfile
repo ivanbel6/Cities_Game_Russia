@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Забираем код из репозитория
+            
                 git 'https://github.com/ivanbel6/Cities_Game_Russia.git'
             }
         }
